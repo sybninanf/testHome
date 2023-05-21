@@ -30,9 +30,9 @@ class HomeAdapter (private val context: Context) : RecyclerView.Adapter<HomeAdap
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private var username: TextView = itemView.findViewById(R.id.username)
-        private val job: TextView = itemView.findViewById(R.id.job)
-        private val company: TextView = itemView.findViewById(R.id.company)
+        val username: TextView = itemView.findViewById(R.id.username)
+        val job: TextView = itemView.findViewById(R.id.job)
+        val company: TextView = itemView.findViewById(R.id.company)
 
 
         fun bindData(user: UserResponse) {
