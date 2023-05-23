@@ -10,11 +10,13 @@ interface ApiService {
     @GET("api/homepage")
     fun getHome(): Call<ArrayList<UserResponse>>
 
-//    @POST("register")
-//    suspend fun registerUser(
-//        @Body registerRequest: RegisRequest
-//    ):UserResponse
-
+    @POST("register")
+    fun registerUser(
+        @Body registerRequest: RegisRequest
+    ): Call<RegisResponse>
 
 
 }
+
+
+

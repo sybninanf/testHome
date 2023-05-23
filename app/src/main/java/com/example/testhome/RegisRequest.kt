@@ -7,7 +7,7 @@ data class RegisRequest(
     @field:SerializedName("name")
     val name: String,
 
-    @field:SerializedName("phone")
+    @field:SerializedName("phoneNumber")
     val phoneNumber: String,
 
     @field:SerializedName("email")
